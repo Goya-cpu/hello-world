@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<time.h>
+struct node
+{
+    int n;
+    struct node *next;
+};
+struct node *add(struct node *list,int i);
+int main(void)
+{
+    struct node *first =NULL;
+
+    int num,N;
+    clock_t start1,finish1,start2,finish2;
+    double duration1,duration2;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    srand(time(NULL));
+    N=10000000+rand()%10000000;
+    start1=clock();
+
+    for (int i = 0; i < N; i++)
+    {
+        first=add(first,i);
+    }
+   finish1=clock();
+   duration1=(double)(finish1-start1)/CLOCKS_PER_SEC;
+   printf("creat the graph costs %.3f seconds\n",duration1);
+  	
+   
+   struct node *search=first;
+   struct node *prime_search=first;
+   for (int i = 0; i < num; i++)
+   search=search->next;
+    
+   start2=clock();
+   int i=0;
+   while (search->next!=NULL)
+   {
+        prime_search=prime_search->next;
+        search=search->next;
+        i++;
+   }
+   finish2=clock();
+   duration2=(double)(finish2-start2)/CLOCKS_PER_SEC;
+   printf("The position is %p,and it costs %.3f seconds",prime_search,duration2);
+   return 0;
+
+}
+struct node *add(struct node *list,int i)
+{
+    struct node *new_node;
+    new_node=malloc(sizeof(struct node));
+    if (new_node == NULL)
+    exit(1);
+    new_node -> n=i;
+    new_node->next=list;
+    return new_node;
+}
