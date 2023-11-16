@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-hellomeow
-=======
-Meowmeowmeow
->>>>>>> 8ac43e2 (file changed)
+fafafa
+hahaha
