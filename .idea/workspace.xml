@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44a471e2-2abe-4260-b5b7-bbd89992971e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/good.json" beforeDir="false" afterPath="$PROJECT_DIR$/good.json" afterDir="false" />
-    </list>
+    <list default="true" id="44a471e2-2abe-4260-b5b7-bbd89992971e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,11 +30,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748265778711</updated>
-      <workItem from="1748265780662" duration="311000" />
+      <workItem from="1748265780662" duration="728000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
